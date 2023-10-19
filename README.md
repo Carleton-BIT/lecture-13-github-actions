@@ -1,4 +1,4 @@
-# lab-3-vcs-and-models
+# lecture-13-github-actions
 
 ## Steps to get this django app running on your own server
 
