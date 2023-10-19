@@ -27,6 +27,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        python studentdemo/manage.py test
+        python manage.py test
       env:
         SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+      working-directory: studentdemo
