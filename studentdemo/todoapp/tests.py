@@ -27,7 +27,7 @@ class TaskModelTests(TestCase):
 
     def test_should_be_due_soon(self):
         """
-        due_soon() returns False for tasks due soon
+        due_soon() returns True for tasks due soon
         """
         contemporary_time = timezone.now() + datetime.timedelta(hours=2)
         task = Task(description='Do the dishes', due_date=contemporary_time)
